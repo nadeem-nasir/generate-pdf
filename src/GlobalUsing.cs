@@ -1,0 +1,13 @@
+﻿global using System;
+global using System.IO;
+global using System.Threading.Tasks;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Azure.WebJobs;
+global using Microsoft.Azure.WebJobs.Extensions.Http;
+global using Microsoft.Extensions.Logging;
+global using PuppeteerSharp;
+global using PuppeteerSharp.Media;
+global using AzureFuncs.GeneratePdfFunctions.Models;
+global using AzureFuncs.GeneratePdfFunctions.Providers;
+global using AzureFuncs.GeneratePdfFunctions.Services;
+global using System.Collections.Generic;

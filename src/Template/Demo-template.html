@@ -1,0 +1,88 @@
+﻿<html>
+<head>
+    <style>
+        /* CSS code for styling the HTML elements */
+        body {
+            font-family: Arial, sans-serif;
+           
+        }
+
+        h1 {
+            color: #0078d4;
+            text-align: center;
+        }
+
+        p {
+            color: #333333;
+            margin: 10px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;            
+            padding: 20px;
+            
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://code.benco.io/icon-collection/azure-icons/Function-Apps.svg" alt="Azure Functions Logo" class="logo">
+        <h1>Welcome to Azure Functions</h1>
+        <p>Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.</p>
+        <p>You can use Azure Functions to create PDF files from HTML using PuppeteerSharp, a .NET port of the popular Node.js library Puppeteer.</p>
+        <p>To learn more about Azure Functions, visit the official documentation.</p>
+        <p></p>
+        <p>Here is an example of a simple HTML template that displays a pie chart of the browser market share:</p>
+        <p>
+            <!-- Create a div element to hold the chart -->
+            <div id="chart_div"></div>
+        </p>
+    </div>
+    <div>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            // Load the corechart package
+            google.charts.load('current', { 'packages': ['corechart'] });
+
+            // Set a callback function to run when the Google Visualization API is loaded
+            google.charts.setOnLoadCallback(drawChart);
+
+            // Define the callback function that creates and draws the chart
+            function drawChart() {
+                // Create a data table
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Browser');
+                data.addColumn('number', 'Share');
+                data.addRows([
+                    ['Chrome', 64.3],
+                    ['Firefox', 10.3],
+                    ['Edge', 7.8],
+                    ['Safari', 3.8],
+                    ['Opera', 2.3],
+                    ['Others', 11.5]
+                ]);
+
+                // Set the chart options
+                var options = {
+                    title: 'Browser Market Share in 2023',
+                    width: 600,
+                    height: 400
+                };
+
+                // Create and draw the chart
+                var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }
+        </script>
+        <script>window.onload = function () { window.IsPageLoaded = true; };</script>
+    </div>
+</body>
+</html>

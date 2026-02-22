@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "AzureWebJobsDashboard": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AZURE_FUNCTIONS_ENVIRONMENT": "Development",
+    "FileShareMountPath": "data001", //This is the name of the mount path for the azure file share and it's defined in bicep template.should have same value as in bicep template.Leve empty if you are not using azure file share
+    "APPINSIGHTS_INSTRUMENTATIONKEY": ""
+  }
+}
